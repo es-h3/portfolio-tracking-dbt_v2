@@ -6,6 +6,6 @@ models:
       - name: UNREALIZED_PROFIT
         description: >
           The unrealized profit on the positon
-      tests:
+        tests:
         - not_null:
             
