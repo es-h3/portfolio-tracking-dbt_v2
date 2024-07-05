@@ -7,5 +7,5 @@ models:
         description: >
           The unrealized profit on the positon
         tests:
-        - not_null:
+        - not_null
             
