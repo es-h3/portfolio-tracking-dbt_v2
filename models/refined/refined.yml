@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: POSITION_ABC_BANK
+    deprecation_date: The positions we have in the ABC bank portfolio
+    columns:
+      - name: UNREALIZED_PROFIT
+        description: >
+          The unrealized profit on the positon
+      tests:
+        - not_null:
+            
