@@ -1,9 +1,7 @@
 WITH
 current_from_snapshot as (
-SELECT *
-FROM {{ ref('SNSH_ABC_BANK_POSITION') }}
-WHERE DBT_VALID_TO is null
-)
+ {{current_from_snapshot(snsh_ref=ref('SNSH_ABC_BANK_POSITION'))}}
+) 
 SELECT
 *
 , POSITION_VALUE - COST_BASE as UNREALIZED_PROFIT
